@@ -99,12 +99,12 @@ function init() {
 ${jsProjectDescription}
 
 ## Table of Contents
-Installation
-Usage
-License
-Contributing
-Tests
-Questions
+[Installation](#Installation)
+[Usage](#Usage-Information)
+[License](#Project-License)
+[Contributing](#Contribution-Guidelines)
+[Tests](#Test-Instructions)
+[Questions](#Questions)
 
 ## Installation
 ${jsProjectInstallationInstructions}
@@ -112,14 +112,14 @@ ${jsProjectInstallationInstructions}
 ## Usage Information
 ${jsProjectUsageInformation}
 
+## Project License
+${jsProjectLicense}
+
 ## Contribution Guidelines
 ${jsProjectContributionGuidelines}
 
 ## Test Instructions
 ${jsProjectTestInstructions}
-
-## Project License
-${jsProjectLicense}
 
 ## Questions
 ${jsGithubUsername}
