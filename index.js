@@ -75,8 +75,7 @@ function writeToFile(fileName, data) {
             console.log('Commit logged!');
         }
     }
-);
-
+)
 }
 
 // function to initialize program
@@ -93,13 +92,20 @@ function init() {
     jsProjectLicense = response.projectLicense;
     jsGithubUsername = response.githubUsername;
     jsEmailAddress = response.emailAddress;
-    console.log(jsProjectTitle + jsProjectDescription + jsProjectInstallationInstructions + 
-        jsProjectUsageInformation + jsProjectContributionGuidelines + jsProjectTestInstructions +
-        jsProjectLicense + jsGithubUsername + jsEmailAddress)
+    writeData = 
+    `# ${jsProjectTitle}
+    ${jsProjectDescription}
+    ${jsProjectInstallationInstructions}
+    ${jsProjectUsageInformation}
+    ${jsProjectContributionGuidelines}
+    ${jsProjectTestInstructions}
+    ${jsProjectLicense}
+    ${jsGithubUsername}
+    ${jsEmailAddress}`
+    writeToFile("readme.md",writeData)
     }
     )
 }
 
 // function call to initialize program
 init();
-// writeToFile();
