@@ -6,7 +6,7 @@ const generateMarkdown = require("./utils/generateMarkdown");
 
 // JavaScript Variables
 let writeData = "";
-let jsFileName = "";
+let jsProjectTitle = "";
 let jsProjectDescription = "";
 let jsProjectInstallationInstructions = "";
 let jsProjectUsageInformation = "";
@@ -21,7 +21,7 @@ const questions = [
     {
         type: "input",
         message: "What is the title of your project?",
-        name: "projectName"
+        name: "projectTitle"
     },
     {
         type: "input",
@@ -83,11 +83,23 @@ function writeToFile(fileName, data) {
 function init() {
     inquirer
     .prompt(questions)
-    .then((response) =>
-    console.log("Hello");
+    .then((response) => {
+    jsProjectTitle = response.projectTitle;
+    jsProjectDescription = response.projectDescription;
+    jsProjectInstallationInstructions = response.projectInstallationInstructions;
+    jsProjectUsageInformation = response.projectUsageInformation;
+    jsProjectContributionGuidelines = response.projectContributionGuidelines;
+    jsProjectTestInstructions = response.projectTestInstructions;
+    jsProjectLicense = response.projectLicense;
+    jsGithubUsername = response.githubUsername;
+    jsEmailAddress = response.emailAddress;
+    console.log(jsProjectTitle + jsProjectDescription + jsProjectInstallationInstructions + 
+        jsProjectUsageInformation + jsProjectContributionGuidelines + jsProjectTestInstructions +
+        jsProjectLicense + jsGithubUsername + jsEmailAddress)
+    }
     )
 }
 
 // function call to initialize program
 init();
-writeToFile();
+// writeToFile();
