@@ -1012,12 +1012,12 @@ function init() {
 ${jsProjectDescription}
 
 ## Table of Contents
-[Installation](#Installation)
-[Usage](#Usage-Information)
-[Contributing](#Contribution-Guidelines)
-[Tests](#Test-Instructions)
-[Questions](#Questions)
-[License](#Project-License)
+* [Installation](#Installation)
+* [Usage](#Usage-Information)
+* [Contributing](#Contribution-Guidelines)
+* [Tests](#Test-Instructions)
+* [Questions](#Questions)
+* [License](#Project-License)
 
 ## Installation
 ${jsProjectInstallationInstructions}
@@ -1032,8 +1032,8 @@ ${jsProjectContributionGuidelines}
 ${jsProjectTestInstructions}
 
 ## Questions
-Please refer to my GitHub Account for any information: https://github.com/${jsGithubUsername}
-You can also contact me if you have any further questions at ${jsEmailAddress}
+* Please refer to my GitHub Account for any information: https://github.com/${jsGithubUsername}
+* You can also contact me if you have any further questions at ${jsEmailAddress}
 
 ## Project License
 ${jsProjectLicenseContents}`
