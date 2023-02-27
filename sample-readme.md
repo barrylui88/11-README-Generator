@@ -6,12 +6,12 @@
 This command line application generates a README file based on responses to prompts entered by the user.
 
 ## Table of Contents
-[Installation](#Installation)
-[Usage](#Usage-Information)
-[Contributing](#Contribution-Guidelines)
-[Tests](#Test-Instructions)
-[Questions](#Questions)
-[License](#Project-License)
+* [Installation](#Installation)
+* [Usage](#Usage-Information)
+* [Contributing](#Contribution-Guidelines)
+* [Tests](#Test-Instructions)
+* [Questions](#Questions)
+* [License](#Project-License)
 
 ## Installation
 To run the application yourself, download the code to your machine and navigate to the code location in your terminal. You can then just run node index.js
@@ -26,8 +26,8 @@ Contribute as required.
 Test by entering values against the prompts and ensuring they are appearing in the generated sample README file appropriately.
 
 ## Questions
-Please refer to my GitHub Account for any information: https://github.com/barrylui88
-You can also contact me if you have any further questions at barrylui88@googlemail.com
+* Please refer to my GitHub Account for any information: https://github.com/barrylui88
+* You can also contact me if you have any further questions at barrylui88@googlemail.com
 
 ## Project License
 MIT License
