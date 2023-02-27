@@ -16,6 +16,7 @@ let jsProjectLicense = "";
 let jsGithubUsername = "";
 let jsEmailAddress = "";
 let jsProjectLicenseContents = "";
+let jsProjectLicenseBadgeURL = "";
 let licenseMITText = 
 `MIT License
 
@@ -992,17 +993,20 @@ function init() {
     jsEmailAddress = response.emailAddress;
     if (jsProjectLicense == "MIT") {
         jsProjectLicenseContents = licenseMITText;
+        jsProjectLicenseBadgeURL = "https://img.shields.io/badge/license-MIT-informational";
     } else if (jsProjectLicense == "GPL") {
         jsProjectLicenseContents = licenseGPLText;
+        jsProjectLicenseBadgeURL = "https://img.shields.io/badge/license-GPL-blue";
     } else if (jsProjectLicense == "Apache") {
         jsProjectLicenseContents = licenseAPAText;
+        jsProjectLicenseBadgeURL = "https://img.shields.io/badge/license-Apache-blue";
     } else {
         jsProjectLicenseContents = "No License Specified";
     }
     writeData = 
-    `${jsProjectLicense}
+    `# ${jsProjectTitle}
 
-    # ${jsProjectTitle}
+![licenseBadge](${jsProjectLicenseBadgeURL})
 
 ## Description
 ${jsProjectDescription}
@@ -1028,8 +1032,8 @@ ${jsProjectContributionGuidelines}
 ${jsProjectTestInstructions}
 
 ## Questions
-${jsGithubUsername}
-${jsEmailAddress}
+You can find the GitHub Repository by searching for my GitHub Username: ${jsGithubUsername}
+You can also contact me if you have any further questions at ${jsEmailAddress}
 
 ## Project License
 ${jsProjectLicenseContents}`
