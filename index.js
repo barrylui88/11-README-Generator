@@ -36,9 +36,10 @@ const questions = [
         name: "projectTestInstructions"
     },
     {
-        type:"checkbox",
+        type:"list",
         message: "Please choose a license for your application from the list of options below.",
-        choices: ["MIT","General Public License","Apache"]
+        choices: ["MIT","General Public License","Apache"],
+        name: "projectLicense"
     },
     {
         type:"input",
@@ -58,7 +59,11 @@ function writeToFile(fileName, data) {
 
 // function to initialize program
 function init() {
-
+    inquirer
+    .prompt(questions)
+    .then((response) =>
+    console.log(response.emailAddress)
+    )
 }
 
 // function call to initialize program
