@@ -94,14 +94,36 @@ function init() {
     jsEmailAddress = response.emailAddress;
     writeData = 
     `# ${jsProjectTitle}
-    ${jsProjectDescription}
-    ${jsProjectInstallationInstructions}
-    ${jsProjectUsageInformation}
-    ${jsProjectContributionGuidelines}
-    ${jsProjectTestInstructions}
-    ${jsProjectLicense}
-    ${jsGithubUsername}
-    ${jsEmailAddress}`
+
+## Description
+${jsProjectDescription}
+
+## Table of Contents
+Installation
+Usage
+License
+Contributing
+Tests
+Questions
+
+## Installation
+${jsProjectInstallationInstructions}
+
+## Usage Information
+${jsProjectUsageInformation}
+
+## Contribution Guidelines
+${jsProjectContributionGuidelines}
+
+## Test Instructions
+${jsProjectTestInstructions}
+
+## Project License
+${jsProjectLicense}
+
+## Questions
+${jsGithubUsername}
+${jsEmailAddress}`
     writeToFile("readme.md",writeData)
     }
     )
