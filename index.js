@@ -1,7 +1,20 @@
+// Links to other Javascript Files
 const fs = require("fs");
 const path = require('path');
 const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown");
+
+// JavaScript Variables
+let writeData = "";
+let jsFileName = "";
+let jsProjectDescription = "";
+let jsProjectInstallationInstructions = "";
+let jsProjectUsageInformation = "";
+let jsProjectContributionGuidelines = "";
+let jsProjectTestInstructions = "";
+let jsProjectLicense = "";
+let jsGithubUsername = "";
+let jsEmailAddress = "";
 
 // array of questions for user
 const questions = [
@@ -55,6 +68,15 @@ const questions = [
 
 // function to write README file
 function writeToFile(fileName, data) {
+    fs.appendFile(fileName, data, function (error) {
+        if (error) {
+            console.error(err);
+        } else {
+            console.log('Commit logged!');
+        }
+    }
+);
+
 }
 
 // function to initialize program
@@ -62,9 +84,10 @@ function init() {
     inquirer
     .prompt(questions)
     .then((response) =>
-    console.log(response.emailAddress)
+    console.log("Hello");
     )
 }
 
 // function call to initialize program
 init();
+writeToFile();
