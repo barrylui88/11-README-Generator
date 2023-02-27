@@ -1032,12 +1032,12 @@ ${jsProjectContributionGuidelines}
 ${jsProjectTestInstructions}
 
 ## Questions
-You can find the GitHub Repository by searching for my GitHub Username: ${jsGithubUsername}
+Please refer to my GitHub Account for any information: https://github.com/${jsGithubUsername}
 You can also contact me if you have any further questions at ${jsEmailAddress}
 
 ## Project License
 ${jsProjectLicenseContents}`
-    writeToFile("readme.md",writeData)
+    writeToFile("sample-readme.md",writeData)
     }
     )
 }
